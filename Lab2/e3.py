@@ -1,0 +1,6 @@
+f = open("z3.1-1.txt", "r")
+a = list(map(int, f.read().split()))
+f.close()
+f = open("srez.txt", "w")
+f.write(str(max(a))+" "+str(min(a)))
+f.close()
